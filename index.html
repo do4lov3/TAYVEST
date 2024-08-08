@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAYVEST - Innovative Solutions for the Energy Industry</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="images/logo.png" alt="TAYVEST Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -23,12 +26,16 @@
         </nav>
     </header>
 
-    <div class="banner" style="background-image: url('images/banner.jpg');">
-        <h1>Innovative Solutions for the Energy Industry</h1>
-        <p>Explore our services and products that drive energy success.</p>
-        <a href="#about" class="cta-button">Learn More</a>
+    <!-- Hero Section -->
+    <div class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Innovative Solutions for the Energy Industry</h1>
+            <p>Explore our services and products that drive energy success.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
     </div>
 
+    <!-- About Section -->
     <div class="content-section" id="about">
         <h2>About Us</h2>
         <p>
@@ -37,17 +44,34 @@
         <img src="images/about-image.jpg" alt="About Us" class="about-image">
     </div>
 
+    <!-- Services Section -->
     <div class="content-section" id="services">
         <h2>Our Services</h2>
-        <ul>
-            <li>Exploration and Production</li>
-            <li>Energy Consulting</li>
-            <li>Environmental Solutions</li>
-            <li>Renewable Energy Services</li>
-            <li>Engineering and Technical Support</li>
-        </ul>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Exploration and Production</h3>
+                <p>Comprehensive exploration and production services tailored to maximize your resource potential.</p>
+            </div>
+            <div class="service-item">
+                <h3>Energy Consulting</h3>
+                <p>Expert consulting services to guide your energy projects towards sustainable success.</p>
+            </div>
+            <div class="service-item">
+                <h3>Environmental Solutions</h3>
+                <p>Innovative solutions to minimize environmental impact and enhance sustainability.</p>
+            </div>
+            <div class="service-item">
+                <h3>Renewable Energy Services</h3>
+                <p>Cutting-edge renewable energy solutions to power the future.</p>
+            </div>
+            <div class="service-item">
+                <h3>Engineering and Technical Support</h3>
+                <p>Top-tier engineering and technical support for all your energy projects.</p>
+            </div>
+        </div>
     </div>
 
+    <!-- Products Section -->
     <div class="content-section" id="products">
         <h2>Our Products</h2>
         <p>Discover our range of cutting-edge products designed to enhance efficiency and performance in the energy sector.</p>
@@ -70,6 +94,7 @@
         </div>
     </div>
 
+    <!-- Contact Section -->
     <div class="content-section" id="contact">
         <h2>Contact Us</h2>
         <form id="contact-form">
@@ -83,11 +108,12 @@
         </form>
     </div>
 
+    <!-- Footer Section -->
     <footer>
         <p>© 2024 TAYVEST. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
-
 </html>
